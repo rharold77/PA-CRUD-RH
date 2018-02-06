@@ -17,8 +17,7 @@ public class Jockey {
 	private Long id;
 	private String firstName;
 	private String lastName;
-	@OneToMany(mappedBy = "jockey", cascade = CascadeType.ALL)
-	private Set<RaceEntry> raceEntries;
+	
 	
 	public Jockey() {};
 	
@@ -38,9 +37,6 @@ public class Jockey {
 	public String getLastName() {
 		return lastName;
 	}
-	
-	public Set<RaceEntry> getRaceEntries() {
-		return raceEntries;
-	}
+
 	
 }

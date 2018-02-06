@@ -4,7 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class RaceEntry {
@@ -13,18 +15,21 @@ public class RaceEntry {
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@ManyToOne
+	@OneToOne
+	@JoinColumn(name = "horse_id")
 	private Horse horse;
 	
-	@ManyToOne
+	@OneToOne
+	@JoinColumn(name = "jockey_id")
 	private Jockey jockey;
 	
 	private String weight;
 	
 	private Double odds;
 	
-	@ManyToOne
-	private Race race;
+//	@ManyToOne
+//	@JoinColumn(name = "race_id")
+//	private Race race;
 
 	public Long getId() {
 		return id;
@@ -66,13 +71,13 @@ public class RaceEntry {
 		this.odds = odds;
 	}
 
-	public Race getRace() {
-		return race;
-	}
-
-	public void setRace(Race race) {
-		this.race = race;
-	}
+//	public Race getRace() {
+//		return race;
+//	}
+//
+//	public void setRace(Race race) {
+//		this.race = race;
+//	}
 	
 	
 }
