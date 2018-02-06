@@ -1,9 +1,13 @@
 package com.pa.domain;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Course {
@@ -13,6 +17,7 @@ public class Course {
 	private Long id;
 	private String name;
 	private String distance;
+	
 
 	public Course() {
 	}
