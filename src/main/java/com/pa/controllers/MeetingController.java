@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pa.domain.Jockey;
 import com.pa.domain.Meeting;
 import com.pa.domain.Race;
 import com.pa.domain.RaceEntry;
@@ -34,6 +33,11 @@ public class MeetingController {
     public List<Meeting> getMeetings() {
 		List<Meeting> meetings = (List<Meeting>) meetingRepository.findAll();
 		return meetings;
+    }
+	
+	@RequestMapping(value = "/{date}", method = RequestMethod.GET)
+    public Meeting getMeetingByDate(@PathVariable String date) {
+		return meetingRepository.findByDate(date);
     }
 	
 	@RequestMapping(method = RequestMethod.POST)

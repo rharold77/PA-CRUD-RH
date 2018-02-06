@@ -14,7 +14,7 @@ INSERT INTO horse (age, name) VALUES ('3', 'Shanghai Elastic');
 INSERT INTO horse (age, name) VALUES ('5', 'Blond Bombshell');
 INSERT INTO horse (age, name) VALUES ('5', 'Georges Boy');
 
-insert into meeting (date, course_id) values (CURRENT_DATE(), 2);
+insert into meeting (date, course_id) values ('07-02-2018', 2);
 
 insert into race (time) values ('4:55');
 insert into race (time) values ('5:25');

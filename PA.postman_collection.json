@@ -148,6 +148,26 @@
 				"description": "REST API calls to test Course endpoint"
 			},
 			"response": []
+		},
+		{
+			"name": "Get Meeting By Date",
+			"request": {
+				"url": "http://localhost:8080/pa/meeting/07-02-2018",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Billy Goat\",\n    \"age\": \"2\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
 		}
 	]
 }

@@ -6,5 +6,5 @@ import com.pa.domain.Meeting;
 
 public interface MeetingRepository extends CrudRepository<Meeting, Long>{
 
-	
+	public Meeting findByDate(String date);
 }

@@ -1,6 +1,5 @@
 package com.pa.domain;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -20,7 +19,7 @@ public class Meeting {
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	private Date date;
+	private String date;
 	
 	@OneToOne
 	@JoinColumn(name = "course_id")
@@ -37,11 +36,11 @@ public class Meeting {
 		this.id = id;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
