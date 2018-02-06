@@ -1,0 +1,153 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PA",
+		"_postman_id": "ab939866-e3db-b387-0ef4-7453726e13df",
+		"description": "Test requests for PA REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Course",
+			"request": {
+				"url": "http://localhost:8080/pa/course/Southwell",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"url": "http://localhost:8080/pa/course/Southwell",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Course",
+			"request": {
+				"url": "http://localhost:8080/pa/horse",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Billy Goat\",\n    \"age\": \"2\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Course",
+			"request": {
+				"url": "http://localhost:8080/pa/course",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"name\": \"Southwell\",\n    \"distance\": \"1m 13y\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Course",
+			"request": {
+				"url": "http://localhost:8080/pa/course",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"name\": \"Southwell\",\n    \"distance\": \"1m 13y\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Meetings",
+			"request": {
+				"url": "http://localhost:8080/pa/meeting",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Billy Goat\",\n    \"age\": \"2\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Race To Meeting",
+			"request": {
+				"url": "http://localhost:8080/pa/meeting/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"6:02\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Race Entry to Race",
+			"request": {
+				"url": "http://localhost:8080/pa/meeting/race/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"horse\": {\n        \"id\": 6,\n        \"name\": \"Georges Boy\",\n        \"age\": 5\n    },\n    \"jockey\": {\n        \"id\": 3,\n        \"firstName\": \"A\",\n        \"lastName\": \"Kirby\"\n    },\n    \"weight\": \"8-8\",\n    \"odds\": 2.5\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		}
+	]
+}
