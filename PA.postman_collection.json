@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "PA",
-		"_postman_id": "ab939866-e3db-b387-0ef4-7453726e13df",
+		"_postman_id": "2eef17b3-635c-b287-7a10-4ffe80fc08a8",
 		"description": "Test requests for PA REST API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -13,7 +13,10 @@
 				"url": "http://localhost:8080/pa/course/Southwell",
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "REST API calls to test Course endpoint"
 			},
 			"response": []
@@ -24,7 +27,10 @@
 				"url": "http://localhost:8080/pa/course/Southwell",
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": ""
 			},
 			"response": []
@@ -153,6 +159,26 @@
 			"name": "Get Meeting By Date",
 			"request": {
 				"url": "http://localhost:8080/pa/meeting/07-02-2018",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Billy Goat\",\n    \"age\": \"2\"\n}"
+				},
+				"description": "REST API calls to test Course endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Meeting By Date Fraction Odds",
+			"request": {
+				"url": "http://localhost:8080/pa/meeting/fraction/07-02-2018",
 				"method": "GET",
 				"header": [
 					{
