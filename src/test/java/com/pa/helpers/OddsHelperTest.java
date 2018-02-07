@@ -27,12 +27,12 @@ public class OddsHelperTest {
 		String odds = "3.5";
 		String decimalOdds = oddsHelper.convertDecimalToFranctionOdds(odds);
 		
-		assertThat(decimalOdds, equalTo("5/2"));
+		assertThat(decimalOdds, equalTo("25/10"));
 		
 		odds = "4.3";
 		decimalOdds = oddsHelper.convertDecimalToFranctionOdds(odds);
 		
-		assertThat(decimalOdds, equalTo("100/30"));
+		assertThat(decimalOdds, equalTo("33/10"));
 	}
 
 }

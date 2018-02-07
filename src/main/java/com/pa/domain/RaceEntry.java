@@ -25,11 +25,8 @@ public class RaceEntry {
 	
 	private String weight;
 	
-	private Double odds;
-	
-//	@ManyToOne
-//	@JoinColumn(name = "race_id")
-//	private Race race;
+	private String odds;
+
 
 	public Long getId() {
 		return id;
@@ -63,21 +60,14 @@ public class RaceEntry {
 		this.weight = weight;
 	}
 
-	public Double getOdds() {
+	public String getOdds() {
 		return odds;
 	}
 
-	public void setOdds(Double odds) {
+	public void setOdds(String odds) {
 		this.odds = odds;
 	}
 
-//	public Race getRace() {
-//		return race;
-//	}
-//
-//	public void setRace(Race race) {
-//		this.race = race;
-//	}
 	
 	
 }
