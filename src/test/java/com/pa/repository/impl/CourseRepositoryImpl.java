@@ -16,11 +16,6 @@ public class CourseRepositoryImpl implements CourseRepository {
 	private static Map<String, Course> database = new HashMap<String, Course>();
 	
 	static {
-		Course course = new Course("Market Rasen", "2m 148y");
-		database.put(course.getName(), course);
-		
-		course = new Course("Southwell", "1m 13y");
-		database.put(course.getName(), course);
 	}
 	
 	@Override
