@@ -29,4 +29,4 @@ This can be imported into Postman and provides a collection of end-to-end tests 
 Things to do
 ------------
 
-1.  I have implemented uni test for the CourseController and MeetingController.  Given time I would have done the same for the other controllers but the pattern is the same as for CourseController so I hope this provides enough.
+I have implemented uni test for the CourseController and MeetingController.  Given time I would have done the same for the other controllers but the pattern is the same as for CourseController so I hope this provides enough.
